@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+
+    <h1 id="titulo">ID</h1>
+    <p id="paragrafo">getElementById seleciona e retorna elementos do DOM</p>
+
+    <hr>
+
+    <h1 class="titulo">CLASSE E TAG</h1>
+    <p class="paragrafo">getElementsByClassName e getElementsByTagName selecionam e retornam uma lista de elementos do
+        DOM. A lista
+        retornada está ao vivo, significa que se elementos forem adicionados, ela será automaticamente atualizada.</p>
+
+    <ul name="tagName">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <hr>
+
+    <h1 class="seletorTitulo">SELETOR GERAL ÚNICO</h1>
+    <p class="seletorParagrafo">querySelector retorna o primeiro elemento que combinar com o seu seletor CSS.</p>
+
+    <ul>
+        <h3>Lista 1</h3>
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li>Produto 3</li>
+    </ul>
+
+    <ul>
+        <h3>Lista 2</h3>
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li>Produto 3</li>
+    </ul>
+
+    <ul>
+        <h3>Lista 3</h3>
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li>Produto 3</li>
+    </ul>
+
+    <hr>
+
+    <h1>SELETOR GERAL LISTA</h1>
+    <p>querySelectorAll retorna todos os elementos compatíveis com o seletor CSS em uma NodeList</p>
+
+    <p class="paragrafos">1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="paragrafos">2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="paragrafos">3 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="paragrafos">4 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <hr>
+
+    <h1>HTMLCOLLECTION VS NODELIST</h1>
+    <p>A diferença está nos métodos e propriedades de ambas. Além disso a NodeList retornada com querySelectorAll é estática.</p>
+
+
+    <section class="grid-section">
+        <h2>Section 1</h2>
+    </section>
+
+    <section class="grid-section">
+        <h2>Section 2</h2>
+    </section>
+
+    <section class="grid-section">
+        <h2>Section 3</h2>
+    </section>
+
+    <hr>
+
+    <h1>ARRAY-LIKE</h1>
+    <p>HTMLCollection e NodeList são array-like, parecem uma array mas não são. O método de Array forEach() por exemplo, existe apenas em NodeList.</p>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
